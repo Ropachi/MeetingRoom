@@ -1,0 +1,25 @@
+@(message: String, data: RoomForm.RoomData, id: Int)(implicit request: MessagesRequestHeader)
+
+@main("会議室 予約削除", "-", "Copyright (c)2019 Pug inc.") {
+    <h:panelGrid columns="1" class="navi">
+        <a href="@routes.HomeController.index()">戻る</a>
+        <a href="@routes.HomeController.add()">予約</a>
+        <a href="@routes.HomeController.edit()">予約修正</a>
+    </h:panelGrid>
+
+    <p>@message 削除修正対象予約番号@id</p>
+
+    <ul>
+        <li>予約番号:@data.id</li>
+        <li>会議室名:@data.room</li>
+        <li>月日:@data.date</li>
+        <li>時刻:@data.time</li>
+        <li>予約者名:@data.name</li>
+        <li>使用部門:@data.sec</li>
+        <li>変更柔軟度:@data.pri</li>
+    </ul>
+    @helper.form(action = routes.HomeController.remove(id)) {
+        @helper.CSRF.formField
+        <button>削除</button>
+    }
+}

@@ -1,0 +1,75 @@
+table {
+    margin: 10px 0px;
+}
+
+table tr th {
+    font-family: 'Bitter', serif;
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #009;
+}
+
+table tr td {
+    font-family: 'Bitter', serif;
+    padding: 5px 15px;
+    color: #006;
+    background-color: #eef;
+}
+
+body {
+    font-family: 'Bitter', serif;
+    font-size: 13pt;
+    padding: 0px 30px;
+    color: BLACK;
+}
+
+header div.header {
+    font-family: 'Bitter', serif;
+    font-size: 50pt;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -8px;
+    color: #eeff;
+    margin: -30px -25px;
+}
+
+h1 {
+    font-family: 'Bitter', serif;
+    color: #77b;
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: center;
+    margin: -10px 0px 0px 0px;
+}
+
+footer {
+    font-family: 'Bitter', serif;
+    color: #66e;
+    text-align: center;
+    font-size: 12pt;
+}
+
+#error {
+    font-family: 'Bitter', serif;
+    color: red;
+    font-size: 11pt;
+}
+
+.row {
+    margin: 15pt 0px;
+    border-bottom: solid 1px #ddd;
+}
+
+button {
+    font-family: 'Bitter', serif;
+    font-size: 13pt;
+    color: black;
+}
+
+.navi {
+    font-family: 'Bitter', serif;
+    font-size: 13pt;
+    padding: 5px 15px;
+    color: #000099;
+    background-color: rgba(32, 143, 180, 0.3);
+}

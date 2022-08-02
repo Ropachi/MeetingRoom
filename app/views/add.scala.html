@@ -1,0 +1,55 @@
+@(message: String, form: Form[RoomForm.Data])(implicit request: MessagesRequestHeader)
+
+@main("会議室 予約", "-", "Copyright (c)2019 Pug inc.") {
+
+    <h:panelGrid columns="1" class="navi">
+        <a href="@routes.HomeController.index()">戻る</a>
+        <a href="@routes.HomeController.edit()">予約修正</a>
+        <a href="@routes.HomeController.delete()">予約削除</a>
+    </h:panelGrid>
+
+    <p id="error">@message　</p>
+    @helper.form(action = routes.HomeController.create()) {
+        @helper.CSRF.formField
+        @helper.select(
+            field = form("room"),
+            args = '_label -> "・予約する会議室を選択してください。",
+            options = Seq(
+                "西館会議室" -> "西館会議室",
+                "2階会議室" -> "2階会議室",
+                "3階会議室" -> "3階会議室",
+                "4階会議室" -> "4階会議室"))
+        @helper.inputDate(
+            field = form("date"),
+            args = '_label -> "・使用月日を選択してください。",
+        )
+        @helper.select(
+            field = form("time"),
+            args = '_label -> "・使用時間帯を選択してください",
+            options = Seq(
+                "10:00〜11:00" -> "10:00〜11:00",
+                "11:00〜12:00" -> "11:00〜12:00",
+                "13:00〜14:00" -> "13:00〜14:00",
+                "14:00〜15:00" -> "14:00〜15:00"))
+        @helper.inputText(
+            field = form("name"),
+            args = '_label -> "・予約者の名前を入力してください")
+        @helper.select(
+            field = form("sec"),
+            args = '_label -> "・使用者の所属部門を選択してください",
+            options = Seq(
+                "技術開発部" -> "技術開発部",
+                "広報部" -> "広報部",
+                "企画営業部" -> "企画営業部",
+                "総務部" -> "総務部"))
+        @helper.inputRadioGroup(
+            field = form("pri"),
+            args = '_label -> "・他の部門から調整依頼があった場合の柔軟度を選択してください",
+            options = Seq(
+                "変更可" -> "変更可",
+                "変更不可" -> "変更不可"))
+
+        <button>予約</button>
+        <br>
+    }
+}

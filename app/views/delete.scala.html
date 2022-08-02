@@ -1,0 +1,25 @@
+@(message: String, form: Form[RoomForm.Data])(implicit request: MessagesRequestHeader)
+
+@main("会議室 予約削除", "-", "Copyright (c)2019 Pug inc.") {
+    <h:panelGrid columns="1" class="navi">
+        <a href="@routes.HomeController.index()">戻る</a>
+        <a href="@routes.HomeController.add()">予約</a>
+        <a href="@routes.HomeController.edit()">予約修正</a>
+    </h:panelGrid>
+
+    <p id="error">@message　</p>
+    @helper.form(action = routes.HomeController.deleteB()) {
+        @helper.inputText(
+            field = form("id"),
+            args = '_label -> "・削除対象の予約番号を入力してください")
+        @helper.CSRF.formField
+        <br>
+        <button>OK</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    }
+}
