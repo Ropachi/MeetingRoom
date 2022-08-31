@@ -1,6 +1,8 @@
+@*予約データ削除内容の表示*@
 @(message: String, data: RoomForm.RoomData, id: Int)(implicit request: MessagesRequestHeader)
 
 @main("会議室 予約削除", "-", "Copyright (c)2019 Pug inc.") {
+    @*ページの移動リンクを設定*@
     <h:panelGrid columns="1" class="navi">
         <a href="@routes.HomeController.index()">戻る</a>
         <a href="@routes.HomeController.add()">予約</a>

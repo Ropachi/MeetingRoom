@@ -1,7 +1,9 @@
+@*IDで予約検索・表示*@
+
 @(message: String, item: RoomForm.RoomData, tid: Int)
 
 @main("会議室 予約システム", "-", "Copyright (c)2019 Pug inc.") {
-
+    @*ページの移動リンクを設定*@
     <h:panelGrid columns="1" class="navi">
         <a href="@routes.HomeController.index()">戻る</a>
         <a href="@routes.HomeController.add()">予約</a>

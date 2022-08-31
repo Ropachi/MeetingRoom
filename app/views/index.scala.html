@@ -1,6 +1,9 @@
+@*全予約リスト一覧取得・表示*@
+
 @(message: String, result: List[RoomForm.RoomData])
 
 @main("会議室 予約システム", "-", "Copyright (c)2019 Pug inc.") {
+    @*ページの移動リンクを設定*@
     <h:panelGrid columns="1" class="navi">
         <a href="@routes.HomeController.add()">予約</a>
         <a href="@routes.HomeController.edit()">予約修正</a>

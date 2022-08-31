@@ -1,0 +1,8 @@
+[debug] Copy resource mappings: 
+[debug] 	(/home/ito/IdeaProjects/play2_scala_会議室予約システム/conf/application.conf,/home/ito/IdeaProjects/play2_scala_会議室予約システム/target/scala-2.12/classes/application.conf)
+[debug] 	(/home/ito/IdeaProjects/play2_scala_会議室予約システム/conf/routes,/home/ito/IdeaProjects/play2_scala_会議室予約システム/target/scala-2.12/classes/routes)
+[debug] 	(/home/ito/IdeaProjects/play2_scala_会議室予約システム/conf/logback.xml,/home/ito/IdeaProjects/play2_scala_会議室予約システム/target/scala-2.12/classes/logback.xml)
+[debug] 	(/home/ito/IdeaProjects/play2_scala_会議室予約システム/conf/messages,/home/ito/IdeaProjects/play2_scala_会議室予約システム/target/scala-2.12/classes/messages)
+[debug] 	(/home/ito/IdeaProjects/play2_scala_会議室予約システム/conf/evolutions,/home/ito/IdeaProjects/play2_scala_会議室予約システム/target/scala-2.12/classes/evolutions)
+[debug] 	(/home/ito/IdeaProjects/play2_scala_会議室予約システム/conf/evolutions/default,/home/ito/IdeaProjects/play2_scala_会議室予約システム/target/scala-2.12/classes/evolutions/default)
+[debug] 	(/home/ito/IdeaProjects/play2_scala_会議室予約システム/conf/evolutions/default/1.sql,/home/ito/IdeaProjects/play2_scala_会議室予約システム/target/scala-2.12/classes/evolutions/default/1.sql)

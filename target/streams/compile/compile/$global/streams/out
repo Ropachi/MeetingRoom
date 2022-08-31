@@ -1,0 +1,9 @@
+[error] /home/ito/IdeaProjects/play2_scala/app/controllers/HomeController.scala:76:11: not found: value result
+[error]       if (result == null) {
+[error]           ^
+[error] /home/ito/IdeaProjects/play2_scala/app/controllers/HomeController.scala:76:7: type mismatch;
+[error]  found   : Unit
+[error]  required: play.api.mvc.Result
+[error]       if (result == null) {
+[error]       ^
+[error] two errors found

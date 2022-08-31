@@ -1,15 +1,15 @@
+//データベースモデル設定
 package controllers
 
-import play.api.data._
-import play.api.data.Forms._
-import play.api.db._
 import anorm._
-import org.h2.store.Data
-import views.html.defaultpages.error
+import play.api.data.Forms._
+import play.api.data._
+import play.api.db._
 
 
 object RoomForm {
 
+  //データベース スキーマ設定
   case class Data(room: String, date: String, time: String, name: String, sec: String, pri: String)
 
   case class RoomData(id: Int, room: String, date: String, time: String, name: String, sec: String, pri: String)
@@ -60,7 +60,7 @@ object RoomForm {
       "pri" -> text
     )(RoomData.apply)(RoomData.unapply)
   )
-
+    //SQLパーサーを設定(HomeControllerにてsqlで使う。)
   val roomparser = {
     SqlParser.int("reserve.id") ~
       SqlParser.str("reserve.room") ~
