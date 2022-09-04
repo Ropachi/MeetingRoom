@@ -4,7 +4,7 @@
 		module="play2_scala_-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20220828184053"
+		publication="20220904221841"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

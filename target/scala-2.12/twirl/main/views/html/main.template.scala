@@ -24,26 +24,27 @@ object main extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlF
 
 
 Seq[Any](format.raw/*2.1*/("""
-"""),format.raw/*3.1*/("""<!DOCTYPE html>
+"""),format.raw/*3.23*/("""
+"""),format.raw/*4.1*/("""<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>"""),_display_(/*6.17*/title),format.raw/*6.22*/("""</title>
+        <title>"""),_display_(/*7.17*/title),format.raw/*7.22*/("""</title>
         <link rel="stylesheet" media="screen"
-        href=""""),_display_(/*8.16*/routes/*8.22*/.Assets.versioned("stylesheets/main.css")),format.raw/*8.63*/("""">
+        href=""""),_display_(/*9.16*/routes/*9.22*/.Assets.versioned("stylesheets/main.css")),format.raw/*9.63*/("""">
     </head>
     <body>
         <header class="row">
-            <div class="header">"""),_display_(/*12.34*/header),format.raw/*12.40*/("""</div>
-            <img src=""""),_display_(/*13.24*/routes/*13.30*/.Assets.versioned("images/meetingroom.png")),format.raw/*13.73*/("""">
-            <h1>"""),_display_(/*14.18*/title),format.raw/*14.23*/("""</h1>
+            <div class="header">"""),_display_(/*13.34*/header),format.raw/*13.40*/("""</div>
+            <img src=""""),_display_(/*14.24*/routes/*14.30*/.Assets.versioned("images/meetingroom.png")),format.raw/*14.73*/("""">
+            <h1>"""),_display_(/*15.18*/title),format.raw/*15.23*/("""</h1>
         </header>
         <article class="row">
-        """),_display_(/*17.10*/content),format.raw/*17.17*/("""
-        """),format.raw/*18.9*/("""</article>
+        """),_display_(/*18.10*/content),format.raw/*18.17*/("""
+        """),format.raw/*19.9*/("""</article>
         <footer class="row">
-            <p>"""),_display_(/*20.17*/footer),format.raw/*20.23*/("""</p>
+            <p>"""),_display_(/*21.17*/footer),format.raw/*21.23*/("""</p>
         </footer>
-        <script src=""""),_display_(/*22.23*/routes/*22.29*/.Assets.versioned("javascripts/main.js")),format.raw/*22.69*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*23.23*/routes/*23.29*/.Assets.versioned("javascripts/main.js")),format.raw/*23.69*/("""" type="text/javascript"></script>
     </body>
 </html>
 """))
@@ -62,11 +63,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Aug 02 11:24:08 JST 2022
+                  DATE: Thu Sep 01 22:04:12 JST 2022
                   SOURCE: /home/ito/IdeaProjects/play2_scala_会議室予約システム/app/views/main.scala.html
-                  HASH: f64b1aa57eaa6fb64240bb607d39fd12244a4119
-                  MATRIX: 747->1|903->64|930->65|1016->125|1041->130|1137->200|1151->206|1212->247|1327->335|1354->341|1411->371|1426->377|1490->420|1537->440|1563->445|1653->508|1681->515|1717->524|1800->580|1827->586|1899->631|1914->637|1975->677
-                  LINES: 21->1|26->2|27->3|30->6|30->6|32->8|32->8|32->8|36->12|36->12|37->13|37->13|37->13|38->14|38->14|41->17|41->17|42->18|44->20|44->20|46->22|46->22|46->22
+                  HASH: cad386406687301100dc9a9397a57658e8111005
+                  MATRIX: 747->1|903->64|931->87|958->88|1044->148|1069->153|1165->223|1179->229|1240->270|1355->358|1382->364|1439->394|1454->400|1518->443|1565->463|1591->468|1681->531|1709->538|1745->547|1828->603|1855->609|1927->654|1942->660|2003->700
+                  LINES: 21->1|26->2|27->3|28->4|31->7|31->7|33->9|33->9|33->9|37->13|37->13|38->14|38->14|38->14|39->15|39->15|42->18|42->18|43->19|45->21|45->21|47->23|47->23|47->23
                   -- GENERATED --
               */
           
