@@ -35,7 +35,7 @@ Seq[Any](format.raw/*2.1*/("""
     <body>
         <header class="row">
             <div class="header">"""),_display_(/*13.34*/header),format.raw/*13.40*/("""</div>
-            <img src=""""),_display_(/*14.24*/routes/*14.30*/.Assets.versioned("images/meetingroom.png")),format.raw/*14.73*/("""">
+            <img src=""""),_display_(/*14.24*/routes/*14.30*/.Assets.versioned("images/meetingroom.jpg")),format.raw/*14.73*/("""">
             <h1>"""),_display_(/*15.18*/title),format.raw/*15.23*/("""</h1>
         </header>
         <article class="row">
@@ -63,9 +63,9 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Thu Sep 01 22:04:12 JST 2022
+                  DATE: Mon Sep 05 13:43:35 JST 2022
                   SOURCE: /home/ito/IdeaProjects/play2_scala_会議室予約システム/app/views/main.scala.html
-                  HASH: cad386406687301100dc9a9397a57658e8111005
+                  HASH: e14e16b0a3e23ffd694dfcdcf4eaaa964e7c7964
                   MATRIX: 747->1|903->64|931->87|958->88|1044->148|1069->153|1165->223|1179->229|1240->270|1355->358|1382->364|1439->394|1454->400|1518->443|1565->463|1591->468|1681->531|1709->538|1745->547|1828->603|1855->609|1927->654|1942->660|2003->700
                   LINES: 21->1|26->2|27->3|28->4|31->7|31->7|33->9|33->9|33->9|37->13|37->13|38->14|38->14|38->14|39->15|39->15|42->18|42->18|43->19|45->21|45->21|47->23|47->23|47->23
                   -- GENERATED --
